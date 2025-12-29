@@ -12,7 +12,7 @@ import org.testng.Assert;
 
 public class FirstTest {
 
-	@org.testng.annotations.Test
+	@Test
 	public void verifyregisteraccout(){
 		
 		WebDriver driver = new ChromeDriver();
