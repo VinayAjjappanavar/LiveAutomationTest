@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-12-28T23:53:20 IST" name="Default suite" finished-at="2025-12-28T23:53:28 IST" duration-ms="7078">
+  <suite started-at="2025-12-29T22:21:32 IST" name="Default suite" finished-at="2025-12-29T22:21:42 IST" duration-ms="10220">
     <groups>
     </groups>
-    <test started-at="2025-12-28T23:53:20 IST" name="Default test" finished-at="2025-12-28T23:53:28 IST" duration-ms="7078">
-      <class name="NewTest.TC_008">
-        <test-method signature="differentpasseordforsame()[pri:0, instance:NewTest.TC_008@692f203f]" started-at="2025-12-28T23:53:21 IST" name="differentpasseordforsame" finished-at="2025-12-28T23:53:28 IST" duration-ms="7027" status="PASS">
+    <test started-at="2025-12-29T22:21:32 IST" name="Default test" finished-at="2025-12-29T22:21:42 IST" duration-ms="10220">
+      <class name="NewTest.TC_009">
+        <test-method signature="warningmessageverify()[pri:0, instance:NewTest.TC_009@692f203f]" started-at="2025-12-29T22:21:32 IST" name="warningmessageverify" finished-at="2025-12-29T22:21:42 IST" duration-ms="10174" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- differentpasseordforsame -->
-      </class> <!-- NewTest.TC_008 -->
+        </test-method> <!-- warningmessageverify -->
+      </class> <!-- NewTest.TC_009 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
