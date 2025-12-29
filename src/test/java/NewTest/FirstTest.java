@@ -12,7 +12,7 @@ import org.testng.Assert;
 
 public class FirstTest {
 
-	@Test
+	@org.testng.annotations.Test
 	public void verifyregisteraccout(){
 		
 		WebDriver driver = new ChromeDriver();
@@ -53,7 +53,7 @@ public class FirstTest {
 		
 		Assert.assertTrue(driver.findElement(By.linkText("Edit your account information")).isDisplayed());
 		
-		driver.quit();
+		driver.close();
 		
 	}
 	    public static String generategmail() {
