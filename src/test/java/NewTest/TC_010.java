@@ -1,8 +1,15 @@
 package NewTest;
 
+import java.awt.image.BufferedImage;
 import java.io.File;
+import java.io.File;
+import java.nio.file.Files;
 import java.time.Duration;
 import java.util.logging.FileHandler;
+
+import javax.imageio.ImageIO;
+
+import org.apache.poi.ss.formula.functions.LookupUtils.CompareResult;
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebDriver;
@@ -23,7 +30,7 @@ public class TC_010 {
 	
 	
 	@Test
-	public void emailverificationwithhalf() throws IOException {
+	public void emailverificationwithhalf() throws IOException, InterruptedException {
 		
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
@@ -46,15 +53,36 @@ public class TC_010 {
 		driver.findElement(By.name("agree")).click();
 		driver.findElement(By.xpath("//input[@value='Continue']")).click();
 		
-				WebElement scren  = driver.findElement(By.xpath("//form[@class='form-horizontal']"));
+		Thread.sleep(4000);
+		
+		//File screenshot = driver.findElement(By.xpath("//form[@class='form-horizontal']")).getScreenshotAs(OutputType.FILE);
+		
+	    //FileHandler.class
+		
+		     WebElement form = driver.findElement(By.xpath("//form[@class='form-horizontal']"));
+
+	        // Take screenshot of that area
+	        File src = form.getScreenshotAs(OutputType.FILE);
+
+	        // Destination file
+	        File dest = new File("Screenshot folder/FormError.png");
+
+	        // Save file
+	        Files.copy(src.toPath(), dest.toPath());
+		
+	        System.out.println("Screenshot saved in Screenshot folder");
+	        
+	        
+	        
+	        BufferedImage expectedimage = ImageIO.read(new File("Screenshot folder/expected.png"));
+	        
+	        BufferedImage actualimage = ImageIO.read(dest);
+	        
+	        boolean result = compareImage
+	        
+	        
 				
-				File srcScreenshot = scren.getScreenshotAs(OutputType.FILE);
-				File destScreenshot = new File("Screenshot/screenexpected1.png");
-				
-				Files.copy(srcScreenshot.toPath(), destScreenshot.toPath());
-				
-				driver.quit();
-				
+			driver.quit();
 	}
 
 }
