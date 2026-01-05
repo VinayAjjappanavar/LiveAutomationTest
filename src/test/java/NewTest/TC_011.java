@@ -18,11 +18,9 @@ public class TC_011 {
 	WebDriver driver;
 	
 	@AfterMethod
-	
 	public void closethebrowser() {
 		driver.quit();
 	}
-	
 	@Test
 	
 public void emailverificationwithhalf() throws IOException, InterruptedException {
@@ -53,9 +51,6 @@ public void emailverificationwithhalf() throws IOException, InterruptedException
 		
 		Assert.assertEquals(driver.findElement(By.xpath("//div[text()='Telephone number does not appear to be valid!']")).getText(), ectualresult);
 
-		//driver.quit();
-		
-		
 	}
 
 public static String generategmail() {
