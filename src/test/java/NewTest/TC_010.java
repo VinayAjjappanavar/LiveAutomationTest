@@ -9,13 +9,16 @@ import java.util.logging.FileHandler;
 
 import javax.imageio.ImageIO;
 
-import org.apache.poi.ss.formula.functions.LookupUtils.CompareResult;
+//import org.apache.poi.ss.formula.functions.LookupUtils.CompareResult;
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 import org.testng.annotations.Test;
+
+import ru.yandex.qatools.ashot.comparison.ImageDiffer;
 
 import java.io.File;
 //import org.openqa.selenium.io.FileHandler;
@@ -62,27 +65,44 @@ public class TC_010 {
 		     WebElement form = driver.findElement(By.xpath("//form[@class='form-horizontal']"));
 
 	        // Take screenshot of that area
-	        File src = form.getScreenshotAs(OutputType.FILE);
+	        File actualFile = form.getScreenshotAs(OutputType.FILE);
+	        
+	        File actualDest = new File("Screenshot folder/FormError.png");
+	        Files.copy(actualFile.toPath(), actualDest.toPath());
 
-	        // Destination file
-	        File dest = new File("Screenshot folder/FormError.png");
+	        // Read images
+	        BufferedImage expectedImage =
+	                ImageIO.read(new File("Screenshot folder/expected.png"));
 
-	        // Save file
-	        Files.copy(src.toPath(), dest.toPath());
-		
-	        System.out.println("Screenshot saved in Screenshot folder");
-	        
-	        
-	        
-	        BufferedImage expectedimage = ImageIO.read(new File("Screenshot folder/expected.png"));
-	        
-	        BufferedImage actualimage = ImageIO.read(dest);
-	        
-	        boolean result = compareImage
-	        
+	        BufferedImage actualImage =
+	                ImageIO.read(actualDest);
+
+	        // Compare images
+	        boolean result = compareImages(expectedImage, actualImage);
+
+	        Assert.assertTrue(result, "❌ Images are NOT matching");
+
+	        System.out.println("✅ Images are matching");
 	        
 				
 			driver.quit();
 	}
 
+	private boolean compareImages(BufferedImage expectedImage, BufferedImage actualImage) {
+		
+		// TODO Auto-generated method stub
+		if (img1.getWidth() != img2.getWidth() || img1.getHeight() != img2.getHeight()) {
+           
+			return false;
+        }
+
+        for (int x = 0; x < img1.getWidth(); x++) {
+            for (int y = 0; y < img1.getHeight(); y++) {
+                if (img1.getRGB(x, y) != img2.getRGB(x, y)) {
+                    return false;
+                }
+            }
+        }
+        return true;
+		}
 }
