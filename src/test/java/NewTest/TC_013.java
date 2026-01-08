@@ -13,7 +13,7 @@ public class TC_013 {
 	@Test
 	public void verifyplaceholders() {
 		
-		//verifying the plaveholder.
+		//verifying the placeholder.
 		
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
