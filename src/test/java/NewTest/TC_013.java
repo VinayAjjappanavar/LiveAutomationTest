@@ -13,6 +13,8 @@ public class TC_013 {
 	@Test
 	public void verifyplaceholders() {
 		
+		//verifying the plaveholder.
+		
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
