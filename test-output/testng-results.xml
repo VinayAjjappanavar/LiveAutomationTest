@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-01-06T22:52:51 IST" name="Default suite" finished-at="2026-01-06T22:53:18 IST" duration-ms="26758">
+  <suite started-at="2026-01-08T21:29:39 IST" name="Default suite" finished-at="2026-01-08T21:29:44 IST" duration-ms="4117">
     <groups>
     </groups>
-    <test started-at="2026-01-06T22:52:51 IST" name="Default test" finished-at="2026-01-06T22:53:18 IST" duration-ms="26758">
-      <class name="NewTest.TC_012">
-        <test-method signature="tabactionchecking()[pri:0, instance:NewTest.TC_012@5656be13]" started-at="2026-01-06T22:52:51 IST" name="tabactionchecking" finished-at="2026-01-06T22:53:18 IST" duration-ms="26713" status="PASS">
+    <test started-at="2026-01-08T21:29:39 IST" name="Default test" finished-at="2026-01-08T21:29:44 IST" duration-ms="4117">
+      <class name="NewTest.TC_013">
+        <test-method signature="verifyplaceholders()[pri:0, instance:NewTest.TC_013@235834f2]" started-at="2026-01-08T21:29:39 IST" name="verifyplaceholders" finished-at="2026-01-08T21:29:44 IST" duration-ms="4068" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tabactionchecking -->
-      </class> <!-- NewTest.TC_012 -->
+        </test-method> <!-- verifyplaceholders -->
+      </class> <!-- NewTest.TC_013 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
