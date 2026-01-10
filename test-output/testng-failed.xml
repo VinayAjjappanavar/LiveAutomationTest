@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="NewTest.TC_014">
+      <class name="NewTest.TC_016">
         <methods>
-          <include name="verifythemandatodyfield"/>
+          <include name="verifyingthespaceisacceptingornot"/>
         </methods>
-      </class> <!-- NewTest.TC_014 -->
+      </class> <!-- NewTest.TC_016 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
