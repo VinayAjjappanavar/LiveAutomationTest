@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-01-08T21:29:39 IST" name="Default suite" finished-at="2026-01-08T21:29:44 IST" duration-ms="4117">
+  <suite started-at="2026-01-10T23:59:02 IST" name="Default suite" finished-at="2026-01-10T23:59:05 IST" duration-ms="3735">
     <groups>
     </groups>
-    <test started-at="2026-01-08T21:29:39 IST" name="Default test" finished-at="2026-01-08T21:29:44 IST" duration-ms="4117">
-      <class name="NewTest.TC_013">
-        <test-method signature="verifyplaceholders()[pri:0, instance:NewTest.TC_013@235834f2]" started-at="2026-01-08T21:29:39 IST" name="verifyplaceholders" finished-at="2026-01-08T21:29:44 IST" duration-ms="4068" status="PASS">
+    <test started-at="2026-01-10T23:59:02 IST" name="Default test" finished-at="2026-01-10T23:59:05 IST" duration-ms="3735">
+      <class name="NewTest.TC_014">
+        <test-method signature="verifythemandatodyfield()[pri:0, instance:NewTest.TC_014@235834f2]" started-at="2026-01-10T23:59:02 IST" name="verifythemandatodyfield" finished-at="2026-01-10T23:59:05 IST" duration-ms="3650" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyplaceholders -->
-      </class> <!-- NewTest.TC_013 -->
+        </test-method> <!-- verifythemandatodyfield -->
+      </class> <!-- NewTest.TC_014 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
