@@ -3,12 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="NewTest.TC_017">
+      <class name="NewTest.TC_018">
         <methods>
-          <include name="tabclose"/>
-          <include name="verifyingthepasswordwasacceprtingthestrongpasswordornot" invocation-numbers="0 1 2 3 4"/>
+          <include name="verifyingthehightandwidth"/>
         </methods>
-      </class> <!-- NewTest.TC_017 -->
+      </class> <!-- NewTest.TC_018 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
