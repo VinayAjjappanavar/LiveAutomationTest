@@ -37,5 +37,6 @@ public void verifyingthehightandwidth() {
 	     Assert.assertEquals(expectedwidth, actualwidth);
 	    
 	     driver.quit();
+	     
 }
 }

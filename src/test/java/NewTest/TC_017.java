@@ -34,6 +34,7 @@ public class TC_017 {
 		driver.findElement(By.xpath("//a[@title=\"My Account\"]")).click();
 		driver.findElement(By.xpath("(//a[text()=\"Register\"])[1]")).click();
 		
+		//details for the register
 		driver.findElement(By.id("input-firstname")).sendKeys("ajay");
 		driver.findElement(By.id("input-lastname")).sendKeys("ajjappa");
 		driver.findElement(By.id("input-email")).sendKeys(generategmail());
