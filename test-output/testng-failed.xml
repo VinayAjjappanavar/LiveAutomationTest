@@ -3,12 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="NewTest.TC_019">
+      <class name="NewTest.TC_020">
         <methods>
-          <include name="closeapplication"/>
-          <include name="Leadingandtrimmingontextbox"/>
+          <include name="verifyingthepolicycheckbox"/>
         </methods>
-      </class> <!-- NewTest.TC_019 -->
+      </class> <!-- NewTest.TC_020 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
