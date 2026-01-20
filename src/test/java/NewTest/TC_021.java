@@ -36,7 +36,7 @@ public class TC_021 {
 	//driver.findElement(By.xpath("//input[@name='newsletter'][@value='1']")).click();
 	
 	//click continue button
-	
+	 
 	driver.findElement(By.xpath("//input[@value=\"Continue\"]")).click();
 	
 	String expectedwarmessage = "Warning: You must agree to the Privacy Policy!";
