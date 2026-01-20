@@ -26,6 +26,8 @@ public class TC_022 {
 		Assert.assertEquals(driver.findElement(By.id("input-password")).getAttribute("type"), "password");
 		Assert.assertEquals(driver.findElement(By.id("input-confirm")).getAttribute("type"), "password");
 		
+		Thread.sleep(4000);
+		
         driver.quit();
 
 	}
