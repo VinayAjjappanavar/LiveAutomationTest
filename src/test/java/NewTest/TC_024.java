@@ -43,6 +43,7 @@ public class TC_024 {
 		
 		Assert.assertEquals(driver.findElement(By.xpath("//div[@class=\"text-danger\"]")).getText(), Actualmessage);
 		
+		driver.quit();
 		
 	}
 	public static String generategmail() {
