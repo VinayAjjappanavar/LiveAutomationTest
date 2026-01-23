@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-01-23T20:08:24 IST" name="Default suite" finished-at="2026-01-23T20:08:29 IST" duration-ms="5047">
+  <suite started-at="2026-01-23T20:38:46 IST" name="Default suite" finished-at="2026-01-23T20:38:49 IST" duration-ms="3239">
     <groups>
     </groups>
-    <test started-at="2026-01-23T20:08:24 IST" name="Default test" finished-at="2026-01-23T20:08:29 IST" duration-ms="5047">
-      <class name="NewTest.TC_024">
-        <test-method signature="verifyingtheconfirmationwarnigmessage()[pri:0, instance:NewTest.TC_024@5656be13]" started-at="2026-01-23T20:08:24 IST" name="verifyingtheconfirmationwarnigmessage" finished-at="2026-01-23T20:08:29 IST" duration-ms="4996" status="PASS">
+    <test started-at="2026-01-23T20:38:46 IST" name="Default test" finished-at="2026-01-23T20:38:49 IST" duration-ms="3239">
+      <class name="NewTest.TC_025">
+        <test-method signature="verifyingtheregisterpage()[pri:0, instance:NewTest.TC_025@235834f2]" started-at="2026-01-23T20:38:46 IST" name="verifyingtheregisterpage" finished-at="2026-01-23T20:38:49 IST" duration-ms="3197" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyingtheconfirmationwarnigmessage -->
-      </class> <!-- NewTest.TC_024 -->
+        </test-method> <!-- verifyingtheregisterpage -->
+      </class> <!-- NewTest.TC_025 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
